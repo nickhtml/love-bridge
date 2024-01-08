@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Bridge</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Love Bridge</h1>
+    <div class="searchIcon" onclick="toggleSearchBox()"><img src="search-icon.png" alt="Search Icon"></div>
+  </header>
+  <main>
+    <form id="loveForm">
+      <label for="coupleNames">Couple's Names:</label>
+      <input type="text" id="coupleNames" name="coupleNames" required><br><br>
+      <label for="loveStory">Love Story (max 500 characters):</label><br>
+      <textarea id="loveStory" name="loveStory" rows="6" cols="70" maxlength="500" required></textarea><br>
+      <span id="charCount">Characters left: 500</span><br><br>
+      <button type="button" onclick="addLoveStory()">Add to Love Bridge</button>
+    </form>
+  
+    <div id="loveBridge">
+      <!-- Display added love stories here -->
+    </div>
+    <div class="searchBox" id="searchBox">
+      <input type="text" placeholder="Search...">
+    </div>
+  </main>
+  <script src="scripts.js" defer></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>
